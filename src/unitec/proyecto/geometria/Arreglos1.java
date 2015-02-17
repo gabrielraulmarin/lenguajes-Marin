@@ -20,8 +20,13 @@ public class Arreglos1 {
      x[2]=-23;
      
      for(int i=0; i<x.length; i++){
-         System.out.println(x[i]);  
+         System.out.println(x[i]); 
+         
      }
+      /* for(int algodon:x){
+        System.out.println(algodon);
+     }*/
+       
     }
     
 }
