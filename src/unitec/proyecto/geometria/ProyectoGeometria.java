@@ -5,6 +5,9 @@
  */
 package unitec.proyecto.geometria;
 
+import java.util.logging.Level;
+import java.util.logging.Logger;
+
 /**
  *
  * @author T-107
@@ -113,11 +116,15 @@ public class ProyectoGeometria extends javax.swing.JFrame {
 
     private void botonCalcularAreaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_botonCalcularAreaActionPerformed
       
-      //pedirle el valor del numero al campo de texto
-      //y tranformarlo a un numero real 
-      Cuadrado c=new Cuadrado();
-        c.setLado(Float.parseFloat(textoLado.getText()));
-       etiquetaResultado.setText("el area es " + c.calcularArea());
+        try {
+            //pedirle el valor del numero al campo de texto
+            //y tranformarlo a un numero real
+            Cuadrado c=new Cuadrado();
+            c.setLado(Float.parseFloat(textoLado.getText()));
+            etiquetaResultado.setText("el area es " + c.calcularArea());
+        } catch (Exception ex) {
+          etiquetaResultado.setText(ex.getMessage());
+        }
               
     }//GEN-LAST:event_botonCalcularAreaActionPerformed
 
