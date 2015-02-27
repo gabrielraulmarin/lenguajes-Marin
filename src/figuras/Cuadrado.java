@@ -1,7 +1,7 @@
 
 package figuras;
 
-public class Cuadrado {
+public class Cuadrado implements Superficies {
     float Lado;
 
     public float getLado() {
@@ -20,6 +20,9 @@ public class Cuadrado {
     }
     
    public float CalcularArea(){
-       return Lado;
+       
+       System.out.print("El area del Cuadrado es: ");
+       
+       return Lado*Lado;
    } 
 }

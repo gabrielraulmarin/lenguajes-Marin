@@ -22,6 +22,7 @@ public class Circulo implements Superficies {
     }
     
     public float CalcularArea() {
+        System.out.print("El area del Circulo es:");
         
         return 3.1416f*Radio*Radio;
     }

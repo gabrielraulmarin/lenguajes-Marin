@@ -2,7 +2,7 @@
 package figuras;
 
 
-public class Rectangulo {
+public class Rectangulo implements Superficies {
     private float LadoMayor;
     private float LadoMenor;
 
@@ -15,6 +15,7 @@ public class Rectangulo {
     }
     
     public float CalcularArea(){
+        System.out.print("El area del Rectangulo es: ");
         return LadoMayor*LadoMenor;
     }
 
