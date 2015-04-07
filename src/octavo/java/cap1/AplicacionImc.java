@@ -20,8 +20,8 @@ public class AplicacionImc {
         Imc xxx=new Imc();
    //referencia   instancia
         
-      float resultado=xxx.calcular(-1.61f, 60);        
-      System.out.println("tu imc es "+resultado);  
+      //float resultado=xxx.calcular(-1.61f, 60);        
+      //System.out.println("tu imc es "+resultado);  
       
     }
     

@@ -14,7 +14,7 @@ public class ProbraContructores {
     double dedos=45.2;
     int i2=300;
     
-    Cuadrado c=new Cuadrado((float)dedos);
+    //Cuadrado c=new Cuadrado((float)dedos);
      
     }
     
